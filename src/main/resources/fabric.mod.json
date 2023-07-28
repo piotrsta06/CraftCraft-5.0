@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "craftcraft",
+  "version": "${version}",
+
+  "name": "CraftCraft - LifeSteal",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Piotrsta"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.piotrsta.craftcraft.CraftCraft"
+    ],
+    "client": [
+      "net.piotrsta.craftcraft.CraftCraftClient"
+    ]
+  },
+  "mixins": [
+    "craftcraft.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
